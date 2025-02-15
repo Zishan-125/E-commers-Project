@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an ecommes project for making Zishan Food Center">
+    <title>Ecommers Project </title>
+    <!--.font-awesome cdn.--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--.nav starts here.--> 
+   
+    <nav>
+      <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    
+    <nav id="menu" class="hidden">
+       <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+           <a href="index.html" class="nav__link" >Home</a>
+        </li>
+        <li class="nav__list">
+            <a href="register.html" class="nav__link" >Register</a>
+         </li>
+         <li class="nav__list">
+            <a href="login.html" class="nav__link" >Login</a>
+         </li>
+         <li class="nav__list">
+            <a href="index.html" class="nav__link" >Logout</a>
+         </li>
+         <li class="nav__list">
+            <a href="contact.html" class="nav__link" >Contact</a>
+         </li> 
+         <li class="nav__list">
+            <a href="profile.html" class="nav__link" >
+                <img class="profile-icon" src="image.jpg" alt="profile icon">
+            </a>
+         </li>
+       </ul>
+       
+       <ul class="nav-lower flex-space-around">
+         <li class="nav__list">
+            <a href="index.html" class="nav__brand nav__link">Zishan Food Center</a>
+         </li>
+         <li class="nav__list">
+            <a href="cart.html" class="nav__link">
+               <span><i class="fa-solid fa-cart-shopping"></i></span>
+
+               Cart 2 products -$124.40
+            </a>
+         </li>
+       </ul>
+    </nav>  
+    <!--.nav ends here.--> 
+    <main>
+      <div class="cart flex-center">
+         <div class="cart__items">
+            <div class="cart__items-heading card">
+               <h2>Shopping Cart [2 items]</h2>
+               <div class="cart__items-actions">
+                  <lebel class="select">
+                     <input type="checkbox" name="select" id="select"/>
+                     Select all items
+                  </lebel>
+                  <button class="btn">
+                     <i class="fas fa-trash-alt"></i>
+                  </button>
+                  <button class="btn">Shop More</button>
+               </div>
+            </div>
+            <div class="cart__item card flex-space-around">
+               <input type="checkbox" />
+               <img src="Product1.jpg" alt="Product1" class="cart__item-img">
+               <div class="cart__item-description">
+                  <h3 class="product__name">Chicken Burger</h3>
+                  <h4 class="product__price">Price : $15</h4>
+                  <p class="cart__item-shipping">Free Shipping</p>
+               </div>
+               <div class="cart__item-actions">
+                  <button class="btn">
+                     <i class="fas fa-trash-alt"></i>
+                  </button>
+                  <div>
+                     <button class="btn">
+                        <i class="fas fa-add"></i>
+                     </button>
+                     <span>3</span>
+                     <button class="btn">
+                        <i class="fas fa-minus"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="cart__item card flex-space-around">
+               <input type="checkbox" />
+               <img src="Product4.webp" alt="Product4" class="cart__item-img">
+               <div class="cart__item-description">
+                  <h3 class="product__name">Hyderabadi Biriyani</h3>
+                  <h4 class="product__price">Price : $25</h4>
+                  <p class="cart__item-shipping">Shipping cost $2.50</p>
+               </div>
+               <div class="cart__item-actions">
+                  <button class="btn">
+                     <i class="fas fa-trash-alt"></i>
+                  </button>
+                  <div>
+                     <button class="btn">
+                        <i class="fas fa-add"></i>
+                     </button>
+                     <span>1</span>
+                     <button class="btn">
+                        <i class="fas fa-minus"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+           
+         </div>
+         <div class="cart__payments">
+            <div class="cart__payment-summary card">
+               <h2>Payment Summary</h2>
+               <div>
+                  <p>Subtotal : </p>
+                  <p>$15</p>
+               </div>
+               <div>
+                  <p>Shipping Cost : </p>
+                  <p>$1.5</p>
+               </div>
+               <div>
+                  <p>Total Cost : </p>
+                  <p>$16.5</p>
+               </div>
+               <button class="btn cart__payment-btn">
+                  Pay Now
+               </button>
+            </div>
+            <div class="cart__payment-methods card">
+               <h2 >Payment Methods</h2>
+           
+            <div>
+               <i class="fa-brands fa-cc-visa fa-3x"></i>
+               <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+               <i class="fa-brands fa-cc-amex fa-3x"></i>
+               <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+               <i class="fa-brands fa-cc-paypal fa-3x"></i>
+            </div>
+         </div>
+         </div>
+      </div>
+      <h2>Cart page</h2>
+   </main>
+    <!--.footer starts here.--> 
+    <footer class="footer  flex-space-around">
+      <div class="flex-space-around">
+         <label for="subscribe">Subscribe to Newsletter: </label>
+         <input type="email" id="subscribe"
+         name="subscribe" class="footer__input"
+         placeholder="Your Email Address"/>
+         <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>
+         <p>Copyright by  &copy;Zishan Food Center. All rights reserved</p>
+      </div>
+    </footer>
+    <!--.footer ends here.--> 
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

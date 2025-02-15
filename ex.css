@@ -1,0 +1,72 @@
+/* Before minification: readable but includes unnecessary spaces and line breaks */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #3498db;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* After minification: same functionality, smaller file size for faster load times */
+body{margin:0;padding:0;font-family:Arial,sans-serif}h1{color:#3498db;font-size:36px;margin-bottom:20px}
+
+
+
+/* Before: This unused CSS bloats the file size */
+.slider {
+  height: 500px;
+  background-color: #333;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+/* After: Removed unnecessary code, keeping only what’s needed */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+<div class="flex-container">
+  <div class="flex-item">Item 1</div>
+  <div class="flex-item">Item 2</div>
+  <div class="flex-item">Item 3</div>
+</div>
+
+<style>
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-item {
+    flex-grow: 1;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+  }
+</style>
+
+
+#header {
+  background-color: blue;
+}
+
+.grid-container {
+  display: grid; /* Activates CSS Grid */
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  gap: 10px; /* Adds space between items */
+}
+
+.grid-item {
+  background-color: #6c5ce7; /* Just for visibility */
+  padding: 20px;
+  text-align: center;
+}

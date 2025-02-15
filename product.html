@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an ecommes project for making Zishan Food Center">
+    <title>Ecommers Project </title>
+    <!--.font-awesome cdn.--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--.nav starts here.--> 
+    <nav>
+      <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    
+    <nav id="menu" class="hidden">
+       <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+           <a href="index.html" class="nav__link" >Home</a>
+        </li>
+        <li class="nav__list">
+            <a href="register.html" class="nav__link" >Register</a>
+         </li>
+         <li class="nav__list">
+            <a href="login.html" class="nav__link" >Login</a>
+         </li>
+         <li class="nav__list">
+            <a href="index.html" class="nav__link" >Logout</a>
+         </li>
+         <li class="nav__list">
+            <a href="contact.html" class="nav__link" >Contact</a>
+         </li> 
+         <li class="nav__list">
+            <a href="profile.html" class="nav__link" >
+                <img class="profile-icon" src="image.jpg" alt="profile icon">
+            </a>
+         </li>
+       </ul>
+       
+       <ul class="nav-lower flex-space-around">
+         <li class="nav__list">
+            <a href="index.html" class="nav__brand nav__link">Zishan Food Center</a>
+         </li>
+         <li class="nav__list">
+            <a href="cart.html" class="nav__link">
+               <span><i class="fa-solid fa-cart-shopping"></i></span>
+
+               Cart 2 products -$124.40
+            </a>
+         </li>
+       </ul>
+    </nav>  
+    <!--.nav ends here.--> 
+<main class="flex-center">
+   <div class="main-content"></div>
+   <section class="product-details flex-center">
+      <div class="product__details-left flex-center">
+         <img class="product__img" src="Product1.jpg" alt="Product1">
+      </div>
+      <div class="product__details-right ">
+         <h3 class="product__name">Chicken Burger</h3>
+         <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+
+         </p>
+         <p class="product__description">
+            <strong >Description: </strong>
+            Treat yourself to a crispy, golden chicken fillet,
+             perfectly seasoned and served in soft, buttery buns with  fresh lettuce,
+              juicy tomatoes, and creamy mayo. Every bite is a burst of flavor and crunch!
+               Customize with your favorite toppings for the perfect burger experience.
+            </p>
+            <h4 class="product__price">$15</h4>
+            <p class="product__rating">Rating: 4.5/5</p>
+            <button class="btn product__button">Add To Cart</button>
+      </div>
+   </section>
+</main>
+
+
+    <!--.footer starts here.--> 
+    <footer class="footer  flex-space-around">
+      <div class="flex-space-around">
+         <label for="subscribe">Subscribe to Newsletter: </label>
+         <input type="email" id="subscribe"
+         name="subscribe" class="footer__input"
+         placeholder="Your Email Address"/>
+         <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>
+         <p>Copyright by  &copy;Zishan Food Center. All rights reserved</p>
+      </div>
+    </footer>
+    <!--.footer ends here.--> 
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
